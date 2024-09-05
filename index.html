@@ -13,28 +13,39 @@
     <main>
         Escolha um herói
         <section>
-            <div class="container">
-            <button>
-                <div class="square"></div> Guerreiro
-            </button>5</div>
-            <div class="container">
-            <button>
-                <div class="diamond"></div> Maga
-            </button>2</div>
-            <div class="container">
-            <button>
-                <div class="circle"></div> Patrulheiro
-            </button>3</div>
-            <div class="button-circle">
-                <p id="valor-atual">Valor Atual: </p>
-                <button id="maior">>Maior</button>
-                <button id="menor"> Menor</button> 
+            <div class="container" data-heroi="Guerreiro">
+                <button class="button-hero">
+                    <div class="square"></div> Guerreiro
+                </button>
+                5
+            </div>
+            <div class="container" data-heroi="Maga">
+                <button class="button-hero">
+                    <div class="diamond"></div> Maga
+                </button>
+                2
+            </div>
+            <div class="container" data-heroi="Patrulheiro">
+                <button class="button-hero">
+                    <div class="circle"></div> Patrulheiro
+                </button>
+                3
+            </div>
+        </section>
+
+        <!-- Contêiner para exibir o herói e o item associado -->
+        <section id="info">
+            <div id="info-heroi" class="container">
+                <!-- Informações do herói serão exibidas aqui -->
+            </div>
+            <div id="info-item" class="container">
+                <!-- Botão do item será exibido aqui -->
+                <button class="button-item">
+                    <div class="item-shape"></div> Nome do Item
+                </button>
+            </div>
         </section>
     </main>
-    </div>
-     <p id="novo-valor">Novo Valor: </p> 
-     <p id="resultado"></p>
-    </div>
     <footer>2024 - Um site lucasptree© </footer>
     <script src="dados.js"></script>
     <script src="app.js"></script>
